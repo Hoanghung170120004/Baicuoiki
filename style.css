@@ -532,7 +532,7 @@ a.links:hover{
     .service__skill{
         padding: 80px calc((100% - 90vw)/2);
     }
-    #testimonials{
+    .testimonials__content{
         padding: 80px calc((100% - 90vw)/2);
     }
     .test--left{
@@ -572,6 +572,11 @@ a.links:hover{
     }
     .about__content__image{
         left: -26%;
+    }
+    .about__content__image img{
+        position: absolute;
+        top: -10%;
+        left: -10%;
     }
     .about__content__text h1{
         position: absolute;
@@ -644,8 +649,14 @@ a.links:hover{
     .contact__content__box{
         padding: 20px;
     }
+    .testimonials__content__box__image img{
+        height: 100%;
+    }
 }
 @media screen and (max-width: 580px) {
+    video{
+        height: 100%;
+    }
     .home__content__text h1{
         font-size: 90px;
     }
