@@ -395,6 +395,10 @@ a.links:hover{
     width: 260px;
     padding: 60px 20px 0 20px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 .icon{
     font-size: 60px;
@@ -727,4 +731,12 @@ a.links:hover{
     .contact__content{
         padding-left: 10vw;
     }
+}
+.service__skill__content__box--image{
+    background-color: #0B60B0;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100%;
 }
