@@ -442,24 +442,43 @@
                 Contact
             </h1>
         </div>
-        <div class="contact__content">
-            <div class="contact__content__box">
-                <i class="fa-solid fa-envelope"></i>
-                <p>222001457@daihocthudo.edu.com</p>
-            </div>            
-            <div class="contact__content__box">
-                <i class="fa-solid fa-phone"></i>
-                <p>
-                    0961076857
-                </p>
-            </div>
-            <div class="contact__content__box">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>
-                    98 Dương Quảng Hàm, Quan Hoa,<br>
-                    Cầu giấy, Hà Nội
-                </p>
-            </div>
+        <div class="contact__">
+            <div class="contact__content" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="contact__content__box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>222001457@daihocthudo.edu.com</p>
+                </div>            
+                <div class="contact__content__box">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>
+                        0961076857
+                    </p>
+                </div>
+                <div class="contact__content__box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>
+                        98 Dương Quảng Hàm, Quan Hoa,<br>
+                        Cầu giấy, Hà Nội
+                    </p>
+                </div>
+            </div> 
+            <div class="contact__content">
+                <form name="Form" onsubmit="return validateForm()" method="post">
+                    <div>
+                        <label>Name:</label>
+                        <input type='text' name='name'>
+                    </div>    
+                    <div>
+                        <label>Mail:</label>
+                        <input type='text' name='mail'>
+                    </div> 
+                    <div>
+                        <label>Message:</label>
+                        <input type='text' name='mess' style="padding: 30px 10px;">
+                    </div>  
+                    <input type='submit' id='send' name='' value="Send">
+                </form>
+            </div> 
         </div>
         <div class="contact__icon">
             <button class="contact__btn">

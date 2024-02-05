@@ -453,13 +453,18 @@ a.links:hover{
     text-align: center;
 }
 .contact__content{
+    padding: 40px 0;
+    width: 360px;
+}
+.contact__{
     display: flex;
     justify-content: space-around;
-    padding: 40px 0;
+    flex-wrap: wrap;
 }
 .contact__content__box{
     display: flex;
     align-items: center;
+    margin: 20px;
 }
 .contact__content__box i{
     font-size: 30px;
@@ -498,6 +503,17 @@ a.links:hover{
 .contact__btn:hover i {
     transform: scale(0.9);
     color: #40A2E3;
+}
+div input{
+    padding: 10px;
+    margin: 20px 0;
+    width: 360px;
+}
+label{
+    position: absolute;
+}
+#send{
+    padding: 10px;
 }
 @media screen and (max-width: 1080px) {
     .home__content{
@@ -646,13 +662,6 @@ a.links:hover{
     .slideshow__content{
         width: 80vw;
     }
-    .contact__content{
-        flex-direction: column;
-        padding-left: 20vw;
-    }
-    .contact__content__box{
-        padding: 20px;
-    }
     .testimonials__content__box__image img{
         height: 100%;
     }
@@ -708,9 +717,6 @@ a.links:hover{
     .slideshow__content__text{
         padding-top: 200px;
     }
-    .contact__content{
-        padding-left: 15vw;
-    }
 }
 @media screen and (max-width: 480px) {
     .home__content__text h1{
@@ -727,9 +733,6 @@ a.links:hover{
     }
     .slideshow__content__text{
         padding-top: 200px;
-    }
-    .contact__content{
-        padding-left: 10vw;
     }
 }
 .service__skill__content__box--image{

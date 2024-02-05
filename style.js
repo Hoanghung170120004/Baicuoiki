@@ -46,3 +46,24 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
+
+function validateForm() {
+    var x;
+    var y;
+    var z;
+    x = document.forms["Form"]["name"].value;
+    y = document.forms["Form"]["mail"].value;
+    z = document.forms["Form"]["mess"].value;
+    if (x == "") {
+    alert("Vui lòng tên");
+    return false;
+    } else if (y == "") {
+    alert("Vui lòng mail");
+    return false;
+    } else if (z == "") {
+        alert("Vui lòng để lại lời nhắn");
+        return false;
+    } else {
+        alert("Cảm ơn bạn đã để lại thông tin");
+    }
+}
